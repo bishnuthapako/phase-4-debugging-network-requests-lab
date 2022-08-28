@@ -8,6 +8,8 @@ function App() {
   const [showForm, setShowForm] = useState(false);
   const [toys, setToys] = useState([]);
 
+  console.log(showForm, 'show')
+
   useEffect(() => {
     fetch("/toys")
       .then((r) => r.json())
